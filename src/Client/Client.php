@@ -15,14 +15,13 @@ use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use GuzzleHttp\ClientTrait as GuzzleClientTrait;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface as GuzzleClientInterface;
 use Psr\Http\Message\UriInterface;
 
 class Client implements ClientInterface
 {
-    use GuzzleClientTrait;
+    use ClientTrait;
 
     private GuzzleClientInterface $guzzleClient;
 
